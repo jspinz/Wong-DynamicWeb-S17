@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Eat w/ jQuery</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        #fish{
+            position:fixed;
+            left:50px;
+        }
+         #shark{
+            position:absolute;
+             left:300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Eat Fish</h2>
+
+    <button>EAT</button>
+
+
+    <div id="fish"><img src="img/fish.jpg"></div>
+    <div id="shark"><img src="img/shark.jpg"></div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('button').on('click',function(){
+                $('#shark').animate({left:'50px'})
+            });
+        });
+    
+    
+    </script>
+
+
+
+</body>
+
+</html>
