@@ -1,0 +1,60 @@
+<html>
+<script>
+    var player = {
+        points: 0,
+        
+        losing: function () {
+            this.points--;
+        },
+        winning: function () {
+            this.points += 20;
+        },
+        
+        jason:function(){
+            this.points==20;
+            // cheating way of winning because can't figure out point system atm
+            return "you win!";
+        },
+
+        getStatus: function () {
+            if (this.points < 5) {
+                return "What's my first name?";
+
+            } 
+//            else {
+//                return "You win!";
+//            }
+        },
+        
+        winner:function(){
+            if(this.points>=5){
+                return "woo!";
+            }
+        }
+        
+        
+
+
+    }
+
+
+    function gameLoop() {
+//        player.getStatus;
+
+        var status = player.getStatus();
+//        console.log(status);
+        
+        if(player.points<5){
+            console.log(status);
+        }
+        if(player.winner()){
+            console.log("winner");
+        
+        }
+
+        
+    }
+    gameLoop();
+</script>
+
+</html>
